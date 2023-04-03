@@ -23,8 +23,14 @@ public class JavaApplication5 {
         System.out.println("Dato de entrada: "+confirmacion);
         
         JOptionPane.showMessageDialog(null, "Bien, probemos la entrada por ventanita.");
-        confirmacion= JOptionPane.showInputDialog("Escriba Miau para confirmar.");
-        JOptionPane.showMessageDialog(null,confirmacion);
+        confirmacion= JOptionPane.showInputDialog("Escriba 'Miau' u alguna otra cosa para confirmar.");
+        if("Miau".equals(confirmacion)){
+            JOptionPane.showMessageDialog(null,"Hola, es usted un mishi, felicidades por decir "+confirmacion+".");
+        }else if("Guau".equals(confirmacion) || "guau".equals(confirmacion) ||"GUAU".equals(confirmacion)){
+            JOptionPane.showMessageDialog(null,"Parece que existe un infiltrado owo");
+        }else{
+            JOptionPane.showMessageDialog(null,"Texto insertado: "+confirmacion);
+        }
         
         
         
