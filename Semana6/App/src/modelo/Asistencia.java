@@ -14,15 +14,11 @@ class Asistencia {
         this.matricula = matricula;
     }
 
-    public boolean isEstado() {
+    public boolean getEstado() {
         return estado;
     }
 
     public Matricula getMatricula() {
         return matricula;
     }
-    
-    
-    
-    
 }
