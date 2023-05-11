@@ -3,10 +3,6 @@ package modelo;
 
 import java.util.Date;
 
-/**
- *
- * @author AULAFISI
- */
 public class Session {
     private int numero;
     private Date fecha;
@@ -30,13 +26,23 @@ public class Session {
     
     public boolean agregarAsistencia(Asistencia asi){
         boolean retorno = false;
-        return retorno;
+        for(short i=0; i<indice; i++){
+            if(asistencias[i].getMatricula().getAlumno().getCodigo() == asi.getMatricula().getAlumno().getCodigo()){
+                return false;
+            }
+        }
+        asistencia[indice]=asi;
+        indice++;
+        retorno = true;
     }
     
     public Asistencia buscarAsistencia(Alumno alumno){
-        Asistencia miau;
-        
+        for (short i=0; i<cant_asistencias; i++){
+            if(asistencias[i].getMatricula().getAlumno().getCodigo() == alumno.getCodigo()){
+                return asistencias[i];
+            }
+        }        
     }
-    
+       
     
 }
