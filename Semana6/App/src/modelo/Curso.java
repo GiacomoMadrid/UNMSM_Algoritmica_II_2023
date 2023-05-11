@@ -98,4 +98,12 @@ public class Curso {
         }
         return 100*contador/(asistencias.length+0.0)
     }
+    
+    // Metodo agregado para solucionar el problema de acceso o llamada a la funcion de calculo de promedios de la clase matricula
+    public void calcularPromedios(){
+        for(int i=0; i<ind_matriculas; i++){
+            float porc_asis = calcularPorcentajeAsistencia(this.matriculas[i].getAlumno());
+            this.matriculas[i].calcularPromedio(porc_asis);
+        }
+    }
 }
