@@ -15,6 +15,23 @@ public class Curso {
     Session sessions[];
     int ind_sessions;
     
+    public String getCodigo(){ return this.codigo; }
+    public void setCodigo(String codigo){ this.codigo = codigo; }
+    
+    public String getNombre(){ return this.nombre; }
+    public void setCodigo(String nombre){ this.nombre = nombre; }
+    
+    public int getNumSessions(){ return this.num_sesiones; }
+    
+    public Docente getDocente(){ return this.docente; }
+    public void setDocente(Docente docente){ this.docente = docente; }
+    
+    public Matricula[] getMatriculas(){ return this.matriculas; }
+    public int getIndMatriculas(){ return this.ind_matriculas; }
+    
+    public Session[] getSessions(){ return this.sessions; }
+    public int getIndSessions(){ return this.ind_sessions; }
+    
     public Curso(String codigo, String nombre, int num_sesiones, Docente docente){
         this.codigo = codigo;
         this.nombre = nombre;
