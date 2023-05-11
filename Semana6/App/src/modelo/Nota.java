@@ -1,10 +1,6 @@
 
 package modelo;
 
-/**
- *
- * @author AULAFISI
- */
 public class Nota {
   
     private float nota;
