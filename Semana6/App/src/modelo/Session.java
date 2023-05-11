@@ -37,7 +37,7 @@ public class Session {
     }
     
     public Asistencia buscarAsistencia(Alumno alumno){
-        for (short i=0; i<cant_asistencias; i++){
+        for (short i=0; i<indice; i++){
             if(asistencias[i].getMatricula().getAlumno().getCodigo() == alumno.getCodigo()){
                 return asistencias[i];
             }
