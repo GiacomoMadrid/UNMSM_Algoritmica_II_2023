@@ -5,8 +5,9 @@ class Matricula {
     boolean estado;
     int promedio;
     Alumno alumno;
-    Nota notas[];
+    Nota notas[i];[];
     int indice;
+    this.promedio = suma/
 
     public Matricula(Alumno alumno) {
         this.alumno = alumno;
@@ -41,5 +42,16 @@ class Matricula {
         return retorno;
     }
     
-    
+    // Funcion que no puede ser accesada desde ninguna otra parte, por lo que requiere adicion de una funcion en la clase curso
+    public void calcularPromedio(int porc_asis){
+        if(porc_asis >= 70){
+            int suma = 0;
+            for(int i=9; i<indice; i++){
+                suma += notas[i];
+            }
+            this.promedio = suma/indice;
+        }else{
+            this.promedio = 10;
+        }
+    }
 }
