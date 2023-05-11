@@ -46,18 +46,23 @@ public class Docente {
     public String toString() {
         return "Docente{" + "codigo=" + codigo + ", notas=" + notas + ", tipo=" + tipo + '}';
     }
-    
-    
-    public boolean registrarNota(float nota, Matricula matricula){
-    
+        
+    public boolean registrarNota(float nota, Matricula matricula){    
             boolean retorno = false;
             return retorno;
     }
     
     public boolean registrarAsistencia(Matricula matricula, boolean asistencia){
-    
             boolean retorno = false;
             return retorno;
+    
     }    
+    
+    
+    
+    
+    
+    
+    
     
 }
