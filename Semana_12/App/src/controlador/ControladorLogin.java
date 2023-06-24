@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 import modelo.Usuario;
 import modelo.UsuarioArreglo;
 import vista.frmIngreso; 
+import vista.frmPrincipal;
         
 public class ControladorLogin {
     UsuarioArreglo modelo;
@@ -32,6 +33,11 @@ public class ControladorLogin {
                 
                 if (user !=null){
                   JOptionPane.showMessageDialog(vista, "Bienvenido(a), "+user.getNombre()+".");
+                  frmPrincipal vistaP = new frmPrincipal;
+                  ControladorPrincipal controladorprincipal = new ControladorPrincipal;
+                  
+                  
+                
                 }else{
                   JOptionPane.showMessageDialog(vista, "Entrada Invalida.");
                 }                
